@@ -21,7 +21,7 @@ div.logo {
 
 ul.nav-links {
     display: flex;
-    margin: 0;
+    margin: 0 100px;
     padding: 0;
 }
 
@@ -113,6 +113,36 @@ ul li a:hover {
     div.hero-background-pos {
       display: none;
     }
+    .nav-bar {
+      overflow: hidden;
+      position: relative;
+    }
+    .nav-bar #nav-links {
+      display: none;
+    }
+
+    .nav-bar a {
+      color: white !important;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+    }
+    .nav-bar a.icon {
+      background: black;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav-bar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    ul#nav-links {
+    margin: 0 100px;
+    padding-top: 35px;
+}
 
 }
 
@@ -429,4 +459,20 @@ div.footer h6 {
     color: #88949B;
     font-size: 1rem;
     padding-top: 6rem;
+}
+
+.nav-bar a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding:20px;
+}
+.nav-bar a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
 }
